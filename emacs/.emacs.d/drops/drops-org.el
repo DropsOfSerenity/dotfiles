@@ -1,4 +1,7 @@
+(install-all-packages 'org-bullets)
+
 (add-hook 'org-mode-hook 'variable-pitch-mode)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (custom-theme-set-faces
  'user
@@ -17,8 +20,8 @@
 
 (custom-theme-set-faces
  'user
- '(variable-pitch ((t (:family "IBM Plex Sans" :height 120 :weight normal))))
- '(fixed-pitch ((t ( :family "IBM Plex Mono" :height 100 :weight normal)))))
+ '(variable-pitch ((t (:family "DejaVu Sans" :height 120 :weight normal))))
+ '(fixed-pitch ((t ( :family "Hack" :height 100 :weight normal)))))
 
 (setq org-hide-emphasis-markers t)
 

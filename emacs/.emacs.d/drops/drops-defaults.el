@@ -3,12 +3,12 @@
 (install-all-packages
  'expand-region
  'exec-path-from-shell
- 'nix-mode
  'hl-todo
  'multiple-cursors
  'smex
  'dtrt-indent
  'smooth-scrolling
+ 'async
  )
 
 (dtrt-indent-global-mode t)
@@ -62,8 +62,5 @@
 
 (require 'smooth-scrolling)
 (smooth-scrolling-mode 1)
-
-(require 'nix-mode)
-(add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
 
 (provide 'drops-defaults)
