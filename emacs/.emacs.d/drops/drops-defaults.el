@@ -42,7 +42,8 @@
 (global-hl-line-mode 0)
 
 ;; defaults
-(setq-default cursor-type '(bar . 4))
+(setq-default cursor-type t)
+(setq-default blink-cursor-mode nil)
 (set-default 'truncate-lines t)
 (setq vc-follow-symlinks t)
 (setq-default indent-tabs-mode nil)
