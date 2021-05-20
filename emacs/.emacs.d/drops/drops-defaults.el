@@ -9,12 +9,13 @@
  'dtrt-indent
  'smooth-scrolling
  'async
+ 'modus-themes
  )
 
 (dtrt-indent-global-mode t)
 
 (modus-themes-load-themes)
-(load-theme 'modus-operandi t)
+(load-theme 'modus-vivendi t)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 (setq visible-bell t)
@@ -25,8 +26,8 @@
 (setq dired-listing-switches "-alh")
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(add-to-list 'default-frame-alist '(font . "Hack-10"))
-(set-face-attribute 'default t :font "Hack-10")
+(add-to-list 'default-frame-alist '(font . "mononoki-10"))
+(set-face-attribute 'default t :font "mononoki-10")
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))

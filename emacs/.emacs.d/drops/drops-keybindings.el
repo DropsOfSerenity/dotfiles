@@ -3,7 +3,10 @@
 (install-all-packages
  'helm
  'helm-git-grep
- 'fzf
+ 'ripgrep
+ 'helm-rg
+ 'projectile
+ 'helm-projectile
  )
 
 ;; NOTE(justin): Helm should use fuzzy matching.
@@ -13,9 +16,11 @@
 
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
-(define-key global-map (kbd "M-p") #'fzf-git-files)
-(define-key global-map (kbd "C-S-f") #'helm-git-grep)
+(define-key global-map (kbd "M-p") #'helm-projectile-find-file-dwim)
+(define-key global-map (kbd "C-S-f") #'helm-projectile-rg)
 (define-key global-map (kbd "M-0") #'delete-window)
 (define-key global-map (kbd "M-1") #'delete-other-windows)
 (define-key global-map (kbd "M-2") #'split-window-below)
