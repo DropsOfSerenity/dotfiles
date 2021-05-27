@@ -26,8 +26,8 @@
 (setq dired-listing-switches "-alh")
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(add-to-list 'default-frame-alist '(font . "mononoki-10"))
-(set-face-attribute 'default t :font "mononoki-10")
+(add-to-list 'default-frame-alist '(font . "Fira Code-10"))
+(set-face-attribute 'default t :font "Fira Code-10")
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
