@@ -15,7 +15,7 @@
 (dtrt-indent-global-mode t)
 
 (modus-themes-load-themes)
-(load-theme 'modus-vivendi t)
+(load-theme 'modus-operandi t)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 (setq visible-bell t)

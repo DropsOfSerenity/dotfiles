@@ -1,4 +1,4 @@
-(install-all-packages 'org-bullets)
+(install-all-packages 'org-bullets 'htmlize)
 
 (add-hook 'org-mode-hook 'variable-pitch-mode)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
